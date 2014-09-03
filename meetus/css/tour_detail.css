@@ -1,0 +1,185 @@
+.tour-detail {
+    margin:0;
+}
+
+.tour-detail .tour-detail-left {
+    padding:0;
+    background-color: #222;
+}
+
+.tour-detail .left-top {
+    padding: 0;
+
+}
+.tour-detail .left-top .title {
+    display: inline-block;
+    font-size: 2rem;
+    color: white;
+}
+.tour-detail .left-top .ribbon {
+    position: absolute;
+    top:0;
+    right: 10%;
+    display: inline-block;
+    margin-top:-3px;
+    padding:15px;
+    background-color:maroon;
+    color:white;
+    box-shadow: 2px 2px 5px #333;
+}
+
+.tour-detail .rate{
+    margin-left: 15px;
+    font-size: 1.8rem;
+    color:#F6E81E;
+}
+.tour-detail .detail-tab {
+    margin:0;
+}
+
+.tour-detail .left-content {
+    padding: 20px 0;
+    background-color: #ddd;
+}
+
+.tour-detail .left-content .list-flower{
+    text-indent: -2.5rem;
+    list-style: none;
+}
+.tour-detail .left-content .list-flower:before{
+    content: url("../img/list_flower.png");
+    position:relative;
+    top:5px;
+}
+.tour-detail .none-list-style {
+    list-style: none;
+}
+.tour-detail .summary-list li{
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+.tour-detail #map-canvas {
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+}
+/* ===================================
+slide-imgs
+=================================== */
+.slide-imgs{
+    position:relative;
+    width: 100%;
+    height:350px;
+    margin-top:30px;
+}
+.slide-imgs .slide-img{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+.slide-imgs .active{ z-index:4; }
+.slide-imgs .last-active{ z-index:3; }
+
+.slide-imgs .number{
+    z-index:5;
+    position:absolute;
+    left:10px;
+    bottom:10px;
+}
+.slide-imgs .number .button{
+    padding:5px;
+    margin-right: 10px;
+    color:white;
+    background-color: red;
+}
+
+
+.tour-detail-right {
+    padding-top:0;
+    padding-right:0;
+}
+.tour-detail-right .about_guide {
+    margin-bottom: 30px;
+    background-color: #222;
+}
+.tour-detail-right .about_guide .title{
+    margin:0;
+    padding:10px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+.tour-detail-right .about_guide .host-image {
+    width:100%;
+}
+.tour-detail-right .about_guide .host-content {
+    padding:10px;
+    background-color: #ddd;
+}
+
+.tour-detail-right .about_host {
+    margin-bottom: 30px;
+    background-color: #222;
+}
+.tour-detail-right .about_host .title{
+    margin:0;
+    padding:10px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+}
+.tour-detail-right .about_host .host-image {
+    width:100%;
+}
+.tour-detail-right .about_host .host-content {
+    padding:10px;
+    background-color: #ddd;
+}
+
+
+.form-date {
+    display: inline-block;
+    width:45%;
+}
+.form-time {
+    display: inline-block;
+    width:45%;
+}
+/* ===================================
+tab, js-tab
+=================================== */
+.js-tab-menu{
+    padding: 15px;
+    background-color: #ccc;
+    color:white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.js-tab-menu:hover {
+    opacity: .9;
+}
+.js-tab-menu-active{
+    z-index: 100;
+    background-color: maroon;
+}
+.js-tab-menu-active:after {
+    z-index: 100;
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 10px solid transparent;
+    border-top-color: maroon;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+}
+.js-tab {
+    background-color: #ddd;
+    display:none;
+}
+.js-tab-active {
+    display:block;
+}

@@ -1,0 +1,55 @@
+html {
+    min-height: 100%;
+}
+@font-face{
+    font-family: "はんなり";
+    src: url("../fonts/Hannari.otf") format("opentype");
+}
+body {
+    font-family: verdana, "はんなり";
+    height: 100%;
+    background: url("../img/material_black.png"),url("../img/top_bg.jpg") no-repeat center;
+    background-size: cover;
+}
+.mask {
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+.top-content {
+    margin-top:100px;
+}
+.top-contnet .top-logo{
+    display: block;
+}
+.top-content .title {
+    font-size: 3rem;
+    color: white;
+}
+.top-content .subtitle {
+    font-size: 2rem;
+    color: white;
+}
+.bottom-content{
+    margin: 30px 30px 0;
+}
+.bottom-content .title {
+    color:white;
+    letter-spacing: .3rem;
+    border-bottom: 2px solid white;
+}
+.bottom-content .content-left-img {
+    width:100%;
+    margin-bottom:70px;
+}
+.bottom-content .content-right-img {
+    width:100%;
+    margin-bottom:70px;
+}
+
+/* ===================================
+modal
+=================================== */
+.modal-content {
+    background-color:#bbb;
+}

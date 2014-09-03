@@ -1,0 +1,135 @@
+html {
+    font-size: 62.5%;
+}
+@font-face{
+    font-family: "はんなり";
+    src: url("../fonts/Hannari.otf") format("opentype");
+}
+body {
+    font-family: verdana,"はんなり";
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    background: url("../img/contents_bg.png") repeat;
+}
+
+/* ===================================
+header
+=================================== */
+.header {
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    background-color: rgba(255,255,255,0.7);
+}
+.header .brand-icon {
+    height: 70px;
+}
+
+/* override bootstrap */
+.container {
+    width: 75%;
+    margin: 20px auto;
+    padding: 0;
+}
+.header .navbar-brand {
+    padding: 5px 15px 15px;
+}
+h1 {
+    margin: 0;
+    padding:10px;
+}
+
+.menu li {
+    margin-left: 30px;
+}
+.menu li a {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.menu-first {
+    margin-left:100px;
+}
+@media screen and (max-width: 450px) {
+    .header{ width: 100%; }
+    .container{ width: 90%; }
+    .menu-first{margin-left: 0;}
+}
+
+/* ===================================
+footer
+=================================== */
+.footer-top {
+    position: fixed;
+    bottom:0;
+    z-index:2;
+    width: 100%;
+    height:50px;
+    padding: 0 10px;
+    line-height:50px;
+    background-color:black;
+}
+
+.footer-top .footer-list {
+    margin-left: 20px;
+    color:white;
+}
+.footer-top .footer-list:hover {
+    color:yellow;
+    text-decoration: none;
+}
+
+.footer_en {
+    width:100%;
+    height:50px;
+    background-color: black;
+    /*background:url("../img/footer_bg.png") no-repeat;*/
+    background-size: 100% 100%;
+}
+
+.footer_en .footer-list {
+    margin-left: 20px;
+    color:white;
+}
+.footer_en .footer-list:hover {
+    color:yellow;
+    text-decoration: none;
+}
+
+.footer_ja {
+    width:100%;
+    height:50px;
+    background-color: black;
+    /*background:url("../img/footer_bg.png") no-repeat;*/
+    background-size: 100% 100%;
+}
+
+.footer_ja .footer-list {
+    margin-left: 20px;
+    color:white;
+}
+.footer_ja .footer-list:hover {
+    color:yellow;
+    text-decoration: none;
+}
+
+/* ===================================
+tips
+=================================== */
+.attention {
+    color: red;
+}
+.header-margin {
+    margin-top:100px;
+}
+.white-star{
+    color:white;
+}
+.left-border {
+    border-left:1px solid gray;
+}
+.h-margin{
+    margin: auto 20px;
+}
+.vt-margin {
+    margin-top: 40px;
+}

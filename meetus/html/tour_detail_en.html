@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/tour_detail.css" />
+    <title>Meet Us Kyoto</title>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+</head>
+<body>
+    <header class="navbar navbar-default navbar-fixed-top header" role="navigation">
+        <div class="header-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index_en.html">
+                    <img alt="Brand" class="brand-icon" src="../img/logo.png" />
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav menu">
+                </ul>
+                <ul class="nav navbar-nav menu pull-right">
+                    <li><a href="index_en.html" class="menu-first">Top</a></li>
+                    <li><a href="tour_list.html">Tour List</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li style="margin-right:20px;"><a href="./">FAQ</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </header>
+
+    <div class="container header-margin">
+        <div class="row tour-detail">
+
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 tour-detail-left">
+                <div class="left-top">
+                    <h1 class="title">Tea Celemony Tour</h1>
+                    <div class="ribbon text-right">
+                        <span style="font-size:2rem;" >¥ 30,000</span><br />
+                        <span>5 hours</span><br />
+                        <span>4~8 Persons</span>
+                    </div>
+                    <p class="rate">★★★<span class="white-star">☆☆</span></p>
+
+                    <div class="slide-imgs">
+                        <img src="../img/image3.jpg" class="slide-img slide-img1 active" />
+                        <img src="../img/image2.jpg" class="slide-img slide-img2" />
+                        <img src="../img/image3.jpg" class="slide-img slide-img3" />
+                        <img src="../img/image4.jpg" class="slide-img slide-img4" />
+                    </div>
+
+                    <div class="detail-tab row">
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 js-tab-menu js-tab-menu-active" data-tab-index="1" >Overview</div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 left-border js-tab-menu" data-tab-index="2">Details</div>
+                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 left-border js-tab-menu" data-tab-index="3">Booking</div>
+                    </div>
+                </div>
+
+                <!-- tab1 -->
+                <div id="idx-1" class="js-tab js-tab-active">
+
+                    <div class="left-content">
+                        <h2 class="h-margin">Point</h2>
+                        <ul class="h-margin">
+                            <li class="list-flower">
+                                A national guide in English with wide and profound knowledge about Kyoto will take you to the best spots in each season in accordance to your taste and wishes.
+                            </li>
+                            <li class="list-flower">
+                                As a Kyoto citizen, he can provide you with a lot of information that is not on standard guide books, like a concierge.
+                            </li>
+                            <li class="list-flower">
+                                He will take your photos wherever you may wish.
+                            </li>
+                        </ul>
+                        <h2 class="h-margin vt-margin">Info</h2>
+                        <ul class="h-margin summary-list">
+                            <li class="none-list-style">
+                                <span class="glyphicon glyphicon-bookmark"></span>
+                                30,000
+                            </li>
+                            <li class="none-list-style">
+                                <span class="glyphicon glyphicon-time"></span>
+                                5 hours
+                            </li>
+                            <li class="none-list-style">
+                                <span class="glyphicon glyphicon-user"></span>
+                                4 ~ 8 users
+                            </li>
+                            <li class="none-list-style">
+                                <span class="glyphicon glyphicon-info-sign"></span>
+                                hohgoehgohoehgoehogheogheohgoehgoeho
+                            </li>
+                            <li class="none-list-style">
+                                <span class="glyphicon glyphicon-map-marker"></span>
+                                hgoeghoeoehgheoghohegheoh
+                            </li>
+                        </ul>
+
+
+                        <div id="map-canvas">
+                        </div>
+                    </div>
+                </div>
+                <!-- END tab1 -->
+
+                <!-- tab2 -->
+                <div id="idx-2" class="js-tab">
+                    <h1 class="title">Example</h1>
+                    <div style="min-height:500px;">
+                    </div>
+                    <div class="text-center" style="padding-bottom:50px;">
+                        <button class="btn btn-danger btn-large js-go-book">Booking!</button>
+                    </div>
+                </div>
+                <!-- END tab2 -->
+
+                <!-- tab3 -->
+                <div  id="idx-3" class="js-tab">
+                    <h1 class="title">Booking</h1>
+                    <div style="margin:30px;padding-bottom:30px;">
+                        <form role="form" method="POST" action="#">
+                            <div class="form-group">
+                                <label for="name">Name<span class="attention">※</span>(required)</label>
+                                <input type="text" class="form-control" placeholder="Please type yout name here" id="name" />
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email<span class="attention">※</span>(required)</label>
+                                <input type="email" class="form-control" placeholder="me@example.com" id="email" />
+                            </div>
+                            <div class="form-group">
+                                <label for="date-first">Date : 1st choice<span class="attention">※</span>(required)</label>
+                                <div>
+                                    <input type="date" class="form-control form-date" id="date-first" value="2014-01-01" />
+                                    <input type="time" class="form-control form-time" id="date-first" value="00:00" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="date-second">Date : 2nd choice</label>
+                                <div>
+                                    <input type="date" class="form-control form-date" id="date-second" value="2014-01-01" />
+                                    <input type="time" class="form-control form-time" id="date-second" value="00:00" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" class="form-control" id="phone" placeholder="xxx-xxxx-xxxx" />
+                            </div>
+                            <div class="form-group">
+                                <label for="guest-number">The Number of Guests<span class="attention">※</span>(required)</label>
+                                <input type="number" class="form-control" id="guest-number" />
+                            </div>
+                            <div class="form-group">
+                                <label for="comment">Request or Comment</label>
+                                <textarea class="form-control" id="comment"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-danger byn-large">Book!!</button>
+
+                        </form>
+                    </div>
+                </div>
+                <!-- END tab3 -->
+
+            </div>
+
+
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 tour-detail-right">
+
+                <div class="about_guide">
+                    <h2 class="title">About Guide</h2>
+                    <img src="../img/image3.jpg" class="host-image" />
+                    <div class="host-content">
+                        <h3>Name</h3>
+                        <p>
+                            Kazuhisa Matsuda
+                        </p>
+                        <h3>Language</h3>
+                        <ul>
+                            <li>English(Fluent)</li>
+                            <li>Germany(Intermediate)</li>
+                            <li>Mandarin(learned at the National Taiwan Normal University)</li>
+                        </ul>
+                        <h3>Message</h3>
+                        <p>
+                            Let’s find hidden charms and beauties of Kyoto while walking with me. I hope to meet you soon and enjoy walking with you. Thank you!
+                        </p>
+                    </div>
+                </div>
+
+                 <div class="about_host">
+                    <h2 class="title">About Host</h2>
+                    <img src="../img/image3.jpg" class="host-image" />
+                    <div class="host-content">
+                        <h3>Name</h3>
+                        <p>
+                            Kazuhisa Matsuda
+                        </p>
+                        <h3>Language</h3>
+                        <ul>
+                            <li>English(Fluent)</li>
+                            <li>Germany(Intermediate)</li>
+                            <li>Mandarin(learned at the National Taiwan Normal University)</li>
+                        </ul>
+                        <h3>Message</h3>
+                        <p>
+                            Let’s find hidden charms and beauties of Kyoto while walking with me. I hope to meet you soon and enjoy walking with you. Thank you!
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer_en">
+        <a href="index_en.html" class="footer-list">English</a>
+        <a href="index_ja.html" class="footer-list">日本語</a>
+        <div class="footer-right-lists pull-right">
+            <a href="#" class="footer-list">About Company</a>
+            <a href="#" class="footer-list">Contact</a>
+            <a href="#" class="footer-list">Private Guide</a>
+            <a href="#" class="footer-list">Tour</a>
+            <a href="#" class="footer-list">Stay</a>        
+            <a href="#" class="footer-list">Blog</a>
+            <span class="footer-list">©MeetUsKyoto 2014</span>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/tour_detail.js"></script>
+</html>
