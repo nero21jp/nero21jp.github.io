@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Fenix);
 html {
     font-size: 62.5%;
 }
@@ -6,7 +7,7 @@ html {
     src: url("../fonts/Hannari.otf") format("opentype");
 }
 body {
-    font-family: verdana,"はんなり";
+    font-family: "Fenix",verdana,"はんなり";
     font-size: 1.3rem;
     line-height: 1.8rem;
     background: url("../img/contents_bg.png") repeat;
