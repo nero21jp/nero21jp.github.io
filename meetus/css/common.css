@@ -20,6 +20,7 @@ header
     height: 80px;
     margin: auto;
     background-color: rgba(255,255,255,0.7);
+    font-size: 1.2em;
 }
 .header .brand-icon {
     height: 70px;
@@ -40,7 +41,7 @@ h1 {
 }
 
 .menu li {
-    margin-left: 30px;
+    margin-left: 10px;
 }
 .menu li a {
     padding-top: 30px;
@@ -67,6 +68,7 @@ footer
     padding: 0 10px;
     line-height:50px;
     background-color:black;
+    font-size:1.2em;
 }
 
 .footer-top .footer-list {
@@ -84,6 +86,7 @@ footer
     background-color: black;
     /*background:url("../img/footer_bg.png") no-repeat;*/
     background-size: 100% 100%;
+    font-size:1.2em;
 }
 
 .footer_en .footer-list {
@@ -101,6 +104,7 @@ footer
     background-color: black;
     /*background:url("../img/footer_bg.png") no-repeat;*/
     background-size: 100% 100%;
+    font-size:1.2em;
 }
 
 .footer_ja .footer-list {
