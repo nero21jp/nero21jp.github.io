@@ -1,0 +1,52 @@
+html {
+    min-height: 100%;
+}
+@font-face{
+    font-family: "はんなり";
+    src: url("../fonts/Hannari.otf") format("opentype");
+}
+body {
+    font-family: verdana, "はんなり";
+}
+.faq-title{
+	padding:0;
+    margin-bottom:20px;
+    border-bottom: 2px solid #aaa;
+}
+
+.qalist{
+	margin-top:10px;
+	margin-left:10px;
+}
+
+.faq{
+	margin-top:30px;
+	margin-bottom:10px;
+}
+
+.faq .q{
+	margin-left:10px;
+	padding-left: 1em;
+	text-indent: -2em;
+	font-size: 1.4em;
+	font-weight:bold;
+	color:black;
+}
+
+.faq .q:before{
+	content:url("../img/Q.png");
+}
+
+.faq .a{
+	margin-top:6px;
+	margin-left:20px;
+	padding-left: 1em;
+	text-indent: -2em;
+	font-size: 1.2em;
+	font-weight:bold;
+	color:#5f5f5f;
+}
+
+.faq .a:before{
+	content:url("../img/A.png");
+}
