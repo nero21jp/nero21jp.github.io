@@ -26,12 +26,13 @@
     background-color:maroon;
     color:white;
     box-shadow: 2px 2px 5px #333;
+    font-family: verdana;
 }
 
 .tour-detail .rate{
     margin-left: 15px;
     font-size: 1.8rem;
-    color:#F6E81E;
+    color:white;
 }
 .tour-detail .detail-tab {
     margin:0;
@@ -43,8 +44,10 @@
 }
 
 .tour-detail .left-content .list-flower{
+    font-size: 2rem;
     text-indent: -2.5rem;
     list-style: none;
+    margin-top:1%;
 }
 .tour-detail .left-content .list-flower:before{
     content: url("../img/list_flower.png");
@@ -54,8 +57,11 @@
 .tour-detail .none-list-style {
     list-style: none;
 }
+.tour-detail .left-content .aboutact{
+    font-size: 2rem;
+}
 .tour-detail .summary-list li{
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 3rem;
 }
 .tour-detail #map-canvas {

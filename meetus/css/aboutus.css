@@ -1,0 +1,22 @@
+.abcontainer {
+	margin-top:90px;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-bottom:10px;
+}
+
+.aboutus_title{
+	padding:0;
+    margin-bottom:20px;
+    border-bottom: 2px solid #aaa;
+    font-size: 3rem;
+}
+
+.item p{
+	font-size: 2rem;
+	margin-left:2rem;
+	line-height:3rem;
+}
+.shinagawa{
+	width:90%;
+}

@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Fenix);
+@import url(http://fonts.googleapis.com/css?family=Alegreya);
 html {
     font-size: 62.5%;
 }
@@ -6,8 +6,12 @@ html {
     font-family: "はんなり";
     src: url("../fonts/Hannari.otf") format("opentype");
 }
+@font-face{
+    font-family: "SuperFrench";
+    src: url("../fonts/SuperFrench.ttf") format("truetype");
+}
 body {
-    font-family: "Fenix",verdana,"はんなり";
+    font-family: "SuperFrench","Alegreya",verdana,"はんなり";
     font-size: 1.3rem;
     line-height: 1.8rem;
     background: url("../img/contents_bg.png") repeat;
@@ -48,11 +52,17 @@ h1 {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.menu li a:hover{
+    color:#B4383D !important;
+}
 .menu-first {
     margin-left:100px;
 }
-@media screen and (max-width: 450px) {
-    .header{ width: 100%; }
+.menu-first:hover{
+    color:#B4383D !important;
+}
+@media screen and (max-width: 1000px) {
+    .header{ width: 100%; font-size: 1.3rem}
     .container{ width: 90%; }
     .menu-first{margin-left: 0;}
 }
@@ -61,8 +71,8 @@ h1 {
 footer
 =================================== */
 .footer-top {
-    position: fixed;
-    bottom:0;
+    position: relative;
+    margin-top: 3%;
     z-index:2;
     width: 100%;
     height:50px;
@@ -70,6 +80,10 @@ footer
     line-height:50px;
     background-color:black;
     font-size:1.2em;
+}
+
+@media screen and (max-width:1000px){
+    .footer-top{ font-size: 3px;}
 }
 
 .footer-top .footer-list {
@@ -99,6 +113,10 @@ footer
     text-decoration: none;
 }
 
+@media screen and (max-width:1000px){
+    .footer_en{ font-size: 1px;}
+}
+
 .footer_ja {
     width:100%;
     height:50px;
@@ -115,6 +133,10 @@ footer
 .footer_ja .footer-list:hover {
     color:yellow;
     text-decoration: none;
+}
+
+@media screen and (max-width:1000px){
+    .footer_ja{ font-size: 1px;}
 }
 
 /* ===================================

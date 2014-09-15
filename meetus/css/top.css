@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Fenix);
+@import url(http://fonts.googleapis.com/css?family=Alegreya);
 html {
     min-height: 100%;
 }
@@ -6,11 +6,18 @@ html {
     font-family: "はんなり";
     src: url("../fonts/Hannari.otf") format("opentype");
 }
+@font-face{
+    font-family: "SuperFrench";
+    src: url("../fonts/SuperFrench.ttf") format("truetype");
+}
 body {
-    font-family: "Fenix",verdana, "はんなり";
+    font-family: "SuperFrench","Alegreya",verdana,"はんなり";
+    width: 100%;
     height: 100%;
-    background: url("../img/material_black.png"),url("../img/top_bg.jpg") no-repeat center;
-    background-size: cover;
+    background: url("../img/material_black.png"),url("../img/top_bg_2.png") no-repeat center;
+    background-size: 100%;
+    background-position:top center;
+    position:relative;
 }
 .mask {
     width:100%;
@@ -18,34 +25,92 @@ body {
     background-color: rgba(0,0,0,0.2);
 }
 .top-content {
-    margin-top:100px;
+    width: 100%;
+    height: 56%;
+    position:relative;
+    margin-top:3%;
 }
-.top-contnet .top-logo{
-    display: block;
+.top-content .top-logo{
+    display:block;
+    width:20%;
+    margin:0 auto;
+    margin-top:+11%;
+}
+.top-content .top-enter{
+    margin-top:2.7%;
+    width:17%;
 }
 .top-content .title {
-    font-size: 3rem;
+    margin-top:-0.3%;
+    width:70%;
+    font-size: 4.5rem;
+    letter-spacing:0.2rem;
     color: white;
 }
+.top-content .subtitle_1{
+    display:block;
+    width:70%;
+    margin:0 auto;
+    margin-top:-1%;
+}
+.top-content .subtitle_2{
+    display:block;
+    width:50%;
+    margin:0 auto;
+    margin-top:-2.5%;
+}
+.top-content .subtitle_1ja{
+    display:block;
+    width:50%;
+    margin:0 auto;
+    margin-top:-1%;
+}
+.top-content .subtitle_2ja{
+    display:block;
+    width:40%;
+    margin:0 auto;
+    margin-top:-2.5%;
+}
 .top-content .subtitle {
-    font-size: 2rem;
+    margin-top:0%;
+    font-size: 3rem;
+    letter-spacing:0.13rem;
     color: white;
 }
 .bottom-content{
-    margin: 30px 30px 0;
+    margin-top: 6.7%;
+    margin-left: 8%;
+    margin-right:8%;
+    height:20%;
 }
 .bottom-content .title {
     color:white;
     letter-spacing: .3rem;
     border-bottom: 2px solid white;
 }
+.bottom-content .whatcontain_logo {
+    width:40%;
+    margin-bottom:-2%;
+}
+.bottom-content .fromcust_logo {
+    width:50%;
+    margin-bottom:-4%;
+}
+.bottom-content .whatcontain_logoja {
+    width:50%;
+    margin-bottom:-2%;
+}
+.bottom-content .fromcust_logoja {
+    width:60%;
+    margin-bottom:-5.5%;
+}
 .bottom-content .content-left-img {
-    width:100%;
-    margin-bottom:70px;
+    width:92%;
+    margin-top:+3%;
 }
 .bottom-content .content-right-img {
     width:100%;
-    margin-bottom:70px;
+    margin-top:+3%;
 }
 
 /* ===================================
