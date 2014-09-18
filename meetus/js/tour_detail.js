@@ -54,3 +54,23 @@ google.maps.event.addDomListener(window, 'load', initialize);
       $active.removeClass('active last-active');
     });
 }
+
+$(function(){
+    var biggestHeight = "0";
+    $(".slide-imgs *").each(function(){
+        if ($(this).height() > biggestHeight ) {
+            biggestHeight = $(this).height()
+        }
+    });
+    $(".slide-imgs").height(biggestHeight);
+})
+
+$(window).resize(function(){
+    var biggestHeight = "0";
+    $(".slide-imgs *").each(function(){
+        if ($(this).height() > biggestHeight ) {
+            biggestHeight = $(this).height()
+        }
+    });
+    $(".slide-imgs").height(biggestHeight);
+})
