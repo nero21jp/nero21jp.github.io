@@ -24,7 +24,7 @@ mark {
 	padding-left: 1em;
 	text-indent: -2em;
 	font-size: 1.7em;
-	font-weight:bold;
+	/*font-weight:bold;*/
 	color:black;
 	/*border-bottom: 1px solid #B4383D;*/
 	/*
@@ -37,12 +37,12 @@ mark {
 }
 
 .faq .a{
-	margin-top:6px;
+	margin-top:10px;
 	margin-left:20px;
 	padding-left: 1em;
 	text-indent: -2em;
 	font-size: 1.7em;
-	font-weight:bold;
+	/*font-weight:bold;*/
 	color:#5f5f5f;
 	/*
 	letter-spacing:0.5rem;

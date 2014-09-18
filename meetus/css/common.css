@@ -7,11 +7,11 @@ html {
     src: url("../fonts/Hannari.otf") format("opentype");
 }
 @font-face{
-    font-family: "SuperFrench";
+    font-family: "SF";
     src: url("../fonts/SuperFrench.ttf") format("truetype");
 }
 body {
-    font-family: "SuperFrench","Alegreya",verdana,"はんなり";
+    font-family: "Alegreya",verdana,"はんなり";
     font-size: 1.3rem;
     line-height: 1.8rem;
     background: url("../img/contents_bg.png") repeat;
